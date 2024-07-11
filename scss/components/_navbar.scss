@@ -1,0 +1,18 @@
+/*navegación*/
+.Navbar{
+    background-color:rgb(121, 116, 116);
+    text-align: center;
+    padding:.4375rem;
+        
+    a{
+    color:black;
+    text-decoration: none;
+    padding: .4375rem 3.125rem;
+    font-family: "Noto serif";
+    font-weight: 400;
+    font-size: 1.25rem ;
+    }
+        
+    a:hover{
+    background-color: map-get($Colores, color5);
+    }}

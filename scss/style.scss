@@ -1,0 +1,15 @@
+@import "./utilities/mapas";
+@import "./utilities/mixin.scss";
+@import "./base/typografias";
+@import "./base/reset";
+@import "./components/navbar";
+@import "./layout/header";
+@import "./layout/main-index";
+@import "./layout/footer";
+@import "./layout/elegirme";
+@import "./layout/cursos";
+@import "./layout/sesiones";
+@import "./layout/contactos";
+@import "./mediaq/media1024x.scss";
+@import "./mediaq/media768px.scss";
+@import "./mediaq/media425px.scss";

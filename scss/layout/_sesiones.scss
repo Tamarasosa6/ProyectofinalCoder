@@ -1,0 +1,88 @@
+/* Pagina 4-Sesiones y Lecturas de Tarot*/
+$margin-bottom:1.25rem;
+$box-shadow:0 .25rem .375rem rgba(0, 0, 0, 0.1);
+$border-radius:.5rem;
+$text-align:center;
+$filter1: drop-shadow(.3125rem .125rem .625rem green);
+$filter2: drop-shadow(.3125rem .125rem .625rem #BD642E);
+
+.sesiones {
+    padding: 1.25rem;
+
+.pagina4 {
+    text-align: $text-align;
+    margin-bottom: $margin-bottom }
+
+.pagina4 h1 {@include h1-estilos;
+    font-family: "Noto serif";
+    filter:$filter1;
+    }
+
+h1:hover{transform: scale(1.2);}
+
+.fotopag4 {
+    display: flex;
+    flex-direction: column;
+    align-items: $text-align;
+    justify-content: center;
+    margin-bottom: 1.25rem; }
+
+.fotopag4 img{
+    width: 30%;
+    border-radius:$border-radius;
+    box-shadow: $box-shadow;
+    transform: scale(1.1);
+    }
+
+.fotopag4 p {
+    font-size: .9375rem;
+    font-family: "Noto serif";
+    padding: 1.25rem;
+    text-align: center;
+    filter:$filter2;}
+
+.fotopag4 p:hover {transform: scale(0.9);}
+
+.infocurso section {
+    margin-bottom: $margin-bottom; 
+    padding: .9375rem;}
+
+.infocurso section h2{
+    font-size: 1.25rem;
+    color:map-get($Colores, color5 );
+    font-family: "Noto serif";
+    text-align:left;}
+
+.infocurso section h2:hover{transform: scale(0.9);}
+
+.infocurso ul li {
+        list-style-type: disc;
+        margin-left: 1.25rem;
+        padding: .625rem  ;
+        font-family: "handlee";
+        font-size: 1rem;
+        font-weight: 600; }
+    
+.infocurso ul li:hover{transform: scale(1.1);}
+
+.infocurso ,.precios{
+    display: flex;
+    flex-direction: row;
+    padding:0;
+    padding-top: 0;
+    margin-left: 2.1875rem;}
+    
+.precios {
+    padding: 1.25rem;
+    border-radius: $border-radius; 
+    background-color: beige;
+    border: 31.25rem;}
+
+h3 {
+    color:map-get($Colores, color5 );
+    margin-bottom: .625rem;}
+
+h4{
+    margin-bottom: 1.25rem;}
+}
+    

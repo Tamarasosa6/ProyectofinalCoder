@@ -1,0 +1,13 @@
+/*responsive 425px-Cursos*/
+@media (max-width:425px){
+    .cursos .pagina3 h1{font-size: 1.375rem;
+    font-weight: bold;}
+    .cursos .pagina3 h2{font-size:1.25rem;}
+    img{width: 15.625rem;
+        height: 15.625rem}
+    .grid1 p {font-size:1.0625rem;}
+}
+
+/*responsive 425px-sesiones*/
+@media (max-width:425px){
+.precios p {text-decoration:line-through;}}

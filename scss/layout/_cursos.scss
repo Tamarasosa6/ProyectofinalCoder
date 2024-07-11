@@ -1,0 +1,58 @@
+/*pagina3-Cursos*/
+.cursos { width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+.pagina3 h1{
+    @include h1-estilos;
+    font-size: 2.1875rem;
+    font-weight: bold;
+    color:map-get($Colores, color5 );
+    font-family: "handlee";
+    filter: drop-shadow(.3125rem .125rem .625rem gray);}
+    
+.pagina3 h2 {
+    font-size: 1.5625rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    text-align: center;
+    font-family: "Noto serif";}
+    
+h2:hover{transform: scale(0.9);
+    filter: drop-shadow(.3125rem .125rem .625rem green);}
+    
+    
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6.25rem;
+    margin-top: .625rem;
+    padding: 3.125rem;}
+    
+section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;}
+    
+img:hover{
+    width: 15.625rem;
+    border-radius: .3125rem;
+    filter: drop-shadow(.3125rem .125rem .625rem gray);}
+        
+p:hover {transform: scale(1.3);
+    filter: drop-shadow(.3125rem .125rem .625rem #BD642E);}
+    
+p{
+    padding-top: 10px;
+    width: 16.25rem;
+    font-family: "Noto serif";
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 26.6992px;
+    text-align: center;
+    border-radius: 1.25rem;
+    height: auto;
+    margin-bottom: .625rem;}
+    }

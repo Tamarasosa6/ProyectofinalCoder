@@ -1,0 +1,22 @@
+/*header*/
+.header-index{
+    padding: 1.25rem;
+    text-align: center;
+    background-image: url(../assets/uma5.jpg);
+    background-size: cover;
+
+    img
+    {width: 15.625rem;}
+
+    img:hover {transform: scale(1.2);}
+
+    h1
+    {font-family: 'handlee';
+    font-size: 2.5rem;
+    margin: .3125rem 0;
+    font-weight: 400;}
+
+    p{
+    font-family: "handlee";
+    font-size: 1.5625rem;
+}}

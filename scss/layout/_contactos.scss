@@ -1,0 +1,52 @@
+/*pagina 5 -Contactos*/
+$text-align:center;
+$padding: 1.25rem;
+
+.contactos {display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:$padding;
+
+h1 {@include h1-estilos;
+    font-family: "Noto serif";
+    font-size: 1.5625rem;
+    }
+
+h1:hover { transform: scale(1.4);
+filter: drop-shadow(.3125rem .125rem .625rem green)
+}
+
+h2 {font-family: "Noto serif";
+font-size: 1.25rem;
+text-align: $text-align;}
+
+h2:hover {transform: scale(1.4);
+filter: drop-shadow(.3125rem .125rem .625rem #FA2946);}
+
+p{font-weight: 400;}
+
+.datosubi {
+width: auto;
+display: flex;
+flex-direction: column;
+padding: $padding;
+text-align: $text-align;
+}
+
+.datosubi:hover {transform: scale(1.1);}
+
+.datostel {
+display: flex;
+flex-direction: column;
+padding:$padding;
+text-align: $text-align;
+}
+
+.datostel:hover{transform: scale(1.1);}
+
+
+iframe {
+    position: relative;
+    width: 18.75rem;
+    height: 18.75rem;}
+}

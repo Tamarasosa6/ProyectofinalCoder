@@ -1,0 +1,795 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/*Fuentes ,"Noto serif" , "Roboto", "raleway", "handlee"*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+}
+
+/*navegación*/
+.Navbar {
+  background-color: rgb(121, 116, 116);
+  text-align: center;
+  padding: 0.4375rem;
+}
+.Navbar a {
+  color: black;
+  text-decoration: none;
+  padding: 0.4375rem 3.125rem;
+  font-family: "Noto serif";
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+.Navbar a:hover {
+  background-color: #4CAF50;
+}
+
+/*header*/
+.header-index {
+  padding: 1.25rem;
+  text-align: center;
+  background-image: url(../assets/uma5.jpg);
+  background-size: cover;
+}
+.header-index img {
+  width: 15.625rem;
+}
+.header-index img:hover {
+  transform: scale(1.2);
+}
+.header-index h1 {
+  font-family: "handlee";
+  font-size: 2.5rem;
+  margin: 0.3125rem 0;
+  font-weight: 400;
+}
+.header-index p {
+  font-family: "handlee";
+  font-size: 1.5625rem;
+}
+
+.main-index {
+  padding: 3.125rem;
+}
+.main-index .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-index article {
+  background-color: #f9f9f9;
+  border: 0.125rem solid blueviolet;
+  border-radius: 0.625rem;
+  padding: 1.25rem;
+  margin: 0.625rem 0;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+.main-index p {
+  font-size: 0.9375rem;
+  font-weight: bold;
+}
+.main-index p:hover {
+  transform: scale(0.9);
+}
+.main-index .holistica {
+  text-align: center;
+  padding: 3.125rem;
+  border: 3.125rem;
+}
+.main-index .holistica:hover {
+  transform: scale(1.2);
+}
+.main-index .holistica h2 {
+  padding: 1.25rem;
+  font-family: "Noto serif";
+  font-size: 1.875rem;
+}
+.main-index ul li {
+  list-style: none;
+  font-size: 1.25rem;
+  color: #4CAF50;
+  font-family: "handlee";
+  font-weight: bold;
+}
+.main-index .info2 {
+  font-size: 1.875rem;
+  font-family: "handlee";
+}
+.main-index .info2:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0.3125rem 0.125rem 0.625rem green);
+}
+.main-index img:hover {
+  transform: scale(1.2);
+}
+.main-index .info2 h3 {
+  padding-top: 1.25rem;
+}
+.main-index .grupo2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1.25rem auto;
+  padding: 0.625rem;
+}
+.main-index div {
+  flex: 1 1 calc(33% - 1.25rem);
+  text-align: center;
+  margin: 1.25rem;
+}
+.main-index .grupo2 img {
+  width: 12.5rem;
+}
+.main-index .grupo2 p {
+  font-size: 1.25rem;
+}
+.main-index .grupo2 p:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0.3125rem 0.125rem 0.625rem #FA2946);
+}
+.main-index .button {
+  padding: 1.25rem;
+}
+.main-index .button a {
+  --glow-color:#6C464F;
+  --glow-spread-color: map-get($Colores, color5 );
+  --enhanced-glow-color: #9192FF;
+  --btn-color:map-get($Colores, color2);
+  border: 0.25em solid var(--glow-color);
+  padding: 1rem 3rem;
+  color: var(--glow-color);
+  font-size: 0.9375rem;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em 0.25em var(--glow-color), 0 0 4em 1em var(--glow-spread-color), inset 0 0 0.75em 0.25em var(--glow-color);
+  text-shadow: 0 0 0.5em var(--glow-color);
+  position: relative;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+.main-index .button::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--glow-spread-color);
+  filter: blur(2em);
+  opacity: 0.7;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
+.main-index .button:hover {
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em 0.25em var(--glow-color), 0 0 4em 2em var(--glow-spread-color), inset 0 0 0.75em 0.25em var(--glow-color);
+  transform: scale(0.9);
+}
+.main-index .button:active {
+  box-shadow: 0 0 0.6em 0.25em var(--glow-color), 0 0 2.5em 2em var(--glow-spread-color), inset 0 0 0.5em 0.25em var(--glow-color);
+}
+
+/*footer*/
+.footer-index {
+  background-color: rgb(121, 116, 116);
+  padding: 1.25rem 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.footer-index div {
+  margin: 0.625rem 0;
+  flex: 1 1 12.5rem;
+}
+.footer-index h2 {
+  font-size: 1.5625rem;
+  margin-bottom: 0.625rem;
+  color: #D0F5BD;
+}
+.footer-index p {
+  font-size: 1.25rem;
+  font-family: "handlee";
+  margin-left: 1.5625rem;
+  font-weight: bold;
+  text-align: center;
+}
+.footer-index ul li {
+  font-size: 1.25rem;
+  padding: 0.625rem;
+  list-style: none;
+}
+.footer-index a {
+  text-decoration: none;
+}
+.footer-index .contacto {
+  text-align: left;
+  margin-left: 3.125rem;
+}
+.footer-index .parrafo {
+  font-weight: bold;
+}
+
+/*Pagina 2 - Por que Elegirme*/
+.elegirme {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.elegirme h1:hover {
+  transform: scale(1.3);
+  filter: drop-shadow(0.3125rem 0.125rem 0.625rem #FA2946);
+}
+.elegirme .pagina2 h1 {
+  font-family: "handlee";
+  font-size: 1.5625rem;
+  font-weight: 700;
+  line-height: 2.0025rem;
+  padding: 1.875rem;
+  margin-top: 1.875rem;
+  text-align: center;
+}
+.elegirme .Generales h2 {
+  text-align: center;
+  padding-top: 0.625rem;
+  width: 28.125rem;
+  font-family: "Noto serif";
+  font-size: 1.25rem;
+  line-height: 1.6687rem;
+}
+.elegirme h2:hover {
+  transform: scale(1.3);
+  filter: drop-shadow(0.3125rem 0.125rem 0.625rem lightgreen);
+}
+.elegirme p:hover {
+  transform: scale(1.1);
+}
+.elegirme .Generales p {
+  font-family: "raleway";
+  padding: 0.9375rem;
+  text-align: center;
+  font-weight: 400;
+}
+.elegirme .sanacion {
+  background-image: url(https://plus.unsplash.com/premium_photo-1689693057941-43f6915ca96c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w0Mzc0NDd8MHwxfHNlYXJjaHwxMTN8fFJFSUtJfGVufDB8fHx8MTcxODA3MDUyMXww&ixlib=rb-4.0.3&q=85&q=85&fmt=jpg&crop=entropy&cs=tinysrgb&w=450);
+  background-size: cover;
+  background-position: center;
+  width: 80%;
+  margin: 3.125rem;
+  border-radius: 1.25rem;
+  padding: 2.5rem;
+  mix-blend-mode: lighten rgba(255, 255, 255, 0.5);
+}
+.elegirme .sanacion h2 {
+  font-size: 1.875rem;
+  padding: 0.3125rem;
+  text-align: center;
+  font-family: "Noto serif";
+}
+.elegirme .sanacion h3 {
+  font-size: 1.5625rem;
+  padding: 0.3125rem;
+  font-weight: 500;
+  text-align: left;
+  font-family: "Noto serif";
+}
+.elegirme h3:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0.3125rem 0.125rem 0.625rem #FA2946);
+}
+.elegirme .sanacion p {
+  font-family: "raleway";
+  font-size: 0.9375rem;
+  padding: 0.3125rem;
+  text-align: left;
+  font-weight: 500;
+}
+.elegirme .sanacion h4 {
+  font-family: "raleway";
+  font-size: 0.9375rem;
+  padding: 0.3125rem;
+  text-align: left;
+  font-weight: 500;
+}
+
+/*pagina3-Cursos*/
+.cursos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cursos .pagina3 h1 {
+  font-family: "handlee";
+  font-size: 1.5625rem;
+  font-weight: 700;
+  line-height: 2.0025rem;
+  padding: 1.875rem;
+  margin-top: 1.875rem;
+  text-align: center;
+  font-size: 2.1875rem;
+  font-weight: bold;
+  color: #4CAF50;
+  font-family: "handlee";
+  filter: drop-shadow(0.3125rem 0.125rem 0.625rem gray);
+}
+.cursos .pagina3 h2 {
+  font-size: 1.5625rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  text-align: center;
+  font-family: "Noto serif";
+}
+.cursos h2:hover {
+  transform: scale(0.9);
+  filter: drop-shadow(0.3125rem 0.125rem 0.625rem green);
+}
+.cursos .grid1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6.25rem;
+  margin-top: 0.625rem;
+  padding: 3.125rem;
+}
+.cursos section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cursos img:hover {
+  width: 15.625rem;
+  border-radius: 0.3125rem;
+  filter: drop-shadow(0.3125rem 0.125rem 0.625rem gray);
+}
+.cursos p:hover {
+  transform: scale(1.3);
+  filter: drop-shadow(0.3125rem 0.125rem 0.625rem #BD642E);
+}
+.cursos p {
+  padding-top: 10px;
+  width: 16.25rem;
+  font-family: "Noto serif";
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 26.6992px;
+  text-align: center;
+  border-radius: 1.25rem;
+  height: auto;
+  margin-bottom: 0.625rem;
+}
+
+/* Pagina 4-Sesiones y Lecturas de Tarot*/
+.sesiones {
+  padding: 1.25rem;
+}
+.sesiones .pagina4 {
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+.sesiones .pagina4 h1 {
+  font-family: "handlee";
+  font-size: 1.5625rem;
+  font-weight: 700;
+  line-height: 2.0025rem;
+  padding: 1.875rem;
+  margin-top: 1.875rem;
+  text-align: center;
+  font-family: "Noto serif";
+  filter: drop-shadow(0.3125rem 0.125rem 0.625rem green);
+}
+.sesiones h1:hover {
+  transform: scale(1.2);
+}
+.sesiones .fotopag4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+.sesiones .fotopag4 img {
+  width: 30%;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
+}
+.sesiones .fotopag4 p {
+  font-size: 0.9375rem;
+  font-family: "Noto serif";
+  padding: 1.25rem;
+  text-align: center;
+  filter: drop-shadow(0.3125rem 0.125rem 0.625rem #BD642E);
+}
+.sesiones .fotopag4 p:hover {
+  transform: scale(0.9);
+}
+.sesiones .infocurso section {
+  margin-bottom: 1.25rem;
+  padding: 0.9375rem;
+}
+.sesiones .infocurso section h2 {
+  font-size: 1.25rem;
+  color: #4CAF50;
+  font-family: "Noto serif";
+  text-align: left;
+}
+.sesiones .infocurso section h2:hover {
+  transform: scale(0.9);
+}
+.sesiones .infocurso ul li {
+  list-style-type: disc;
+  margin-left: 1.25rem;
+  padding: 0.625rem;
+  font-family: "handlee";
+  font-size: 1rem;
+  font-weight: 600;
+}
+.sesiones .infocurso ul li:hover {
+  transform: scale(1.1);
+}
+.sesiones .infocurso, .sesiones .precios {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  padding-top: 0;
+  margin-left: 2.1875rem;
+}
+.sesiones .precios {
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  background-color: beige;
+  border: 31.25rem;
+}
+.sesiones h3 {
+  color: #4CAF50;
+  margin-bottom: 0.625rem;
+}
+.sesiones h4 {
+  margin-bottom: 1.25rem;
+}
+
+/*pagina 5 -Contactos*/
+.contactos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.25rem;
+}
+.contactos h1 {
+  font-family: "handlee";
+  font-size: 1.5625rem;
+  font-weight: 700;
+  line-height: 2.0025rem;
+  padding: 1.875rem;
+  margin-top: 1.875rem;
+  text-align: center;
+  font-family: "Noto serif";
+  font-size: 1.5625rem;
+}
+.contactos h1:hover {
+  transform: scale(1.4);
+  filter: drop-shadow(0.3125rem 0.125rem 0.625rem green);
+}
+.contactos h2 {
+  font-family: "Noto serif";
+  font-size: 1.25rem;
+  text-align: center;
+}
+.contactos h2:hover {
+  transform: scale(1.4);
+  filter: drop-shadow(0.3125rem 0.125rem 0.625rem #FA2946);
+}
+.contactos p {
+  font-weight: 400;
+}
+.contactos .datosubi {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  text-align: center;
+}
+.contactos .datosubi:hover {
+  transform: scale(1.1);
+}
+.contactos .datostel {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  text-align: center;
+}
+.contactos .datostel:hover {
+  transform: scale(1.1);
+}
+.contactos iframe {
+  position: relative;
+  width: 18.75rem;
+  height: 18.75rem;
+}
+
+/*responsive-1094px*/
+@media (max-width: 1094px) {
+  .header-index {
+    padding: 0.625rem;
+  }
+  .header-index img {
+    width: 18.75rem;
+    height: 18.75rem;
+  }
+  .Navbar {
+    font-size: 1.375rem;
+  }
+  .Navbar a {
+    font-size: 0.9375rem;
+    font-weight: bold;
+    padding: 0.3125rem 1.25rem;
+  }
+  .main-index p {
+    font-weight: bold;
+  }
+  .holistica {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .holistica h2 {
+    font-family: "Handlee";
+    text-align: center;
+    font-size: 2.1875rem;
+    font-weight: bold;
+  }
+  .holistica ul li {
+    font-size: 1.5625rem;
+    font-family: "handlee";
+    font-weight: bold;
+  }
+  .holistica a {
+    width: 60%;
+    margin: 1.875rem;
+    font-size: 1.25rem;
+    color: white;
+  }
+  .grupo2 img {
+    width: 7.5rem;
+    height: 9.375rem;
+  }
+  .button {
+    padding: 0.625rem;
+  }
+  .footer-index {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    font-size: 0.125rem;
+    padding: 0rem;
+    margin: 0rem;
+    flex-wrap: wrap;
+  }
+  .footer-index p {
+    font-size: 1.0625rem;
+    text-align: left;
+    font-weight: bold;
+  }
+  .footer-index ul li {
+    font-size: 1.0625rem;
+    font-weight: bold;
+  }
+  .footer-index img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+/*Responsive -elegirme*/
+@media (max-width: 68.375rem) {
+  .elegirme {
+    flex-direction: column;
+    display: flex;
+    margin: 0.3125rem;
+  }
+  .Generales p:hover {
+    transform: scale(0.9);
+  }
+}
+/*responsive-Cursos*/
+@media (max-width: 68.375rem) {
+  .grid img:hover {
+    transform: scale(1.1);
+  }
+  .cursos .grid1 {
+    flex-direction: column;
+    display: flex;
+  }
+  img {
+    width: 18.75rem;
+    height: 18.75rem;
+  }
+  .grid1 p {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+}
+/*respondive-Sesiones*/
+@media (max-width: 1094px) {
+  .fotopag4 {
+    display: flex;
+    flex-direction: column;
+  }
+  .fotopag4 img {
+    height: 12.5rem;
+    width: 12.5rem;
+  }
+  .fotopag4 p:hover {
+    transform: scale(0.7);
+  }
+  .infocurso .precios {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-left: 0;
+  }
+  .precios p {
+    text-decoration: line-through;
+  }
+  .footer-index img {
+    width: 1.875rem;
+    height: 1.875rem;
+    padding: 0;
+  }
+}
+/*respondive-Contactos*/
+@media (max-width: 1094px) {
+  .contactos h1 {
+    font-size: 1.875rem;
+  }
+  .contactos h2 {
+    font-size: 1.5625rem;
+  }
+}
+/*responsive-768px*/
+@media (max-width: 768px) {
+  .header-index img {
+    width: 15.625rem;
+    height: 15.625rem;
+  }
+  .Navbar {
+    display: flex;
+    flex-direction: column;
+  }
+  .Navbar a {
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
+  .main-index p {
+    font-weight: bold;
+    font-size: 0.9375rem;
+  }
+  .holistica h2 {
+    font-family: "Noto serif";
+    text-align: center;
+    font-size: 2.1875rem;
+    font-weight: bold;
+  }
+  .holistica ul li {
+    font-size: 1.125rem;
+    font-family: "handlee";
+    font-weight: bold;
+  }
+  .info2 {
+    font-size: 1.5625rem;
+    font-weight: bold;
+  }
+  .button {
+    padding: 0.625rem;
+  }
+  .footer-index {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    padding: 0rem;
+    margin: 0rem;
+    flex-wrap: wrap;
+  }
+  .footer-index h2 {
+    font-size: 0.9375rem;
+  }
+  .footer-index p {
+    font-size: 0.9375rem;
+    font-weight: bold;
+  }
+  .footer-index ul li {
+    font-size: 0.9375rem;
+    font-weight: bold;
+    padding: 0.625rem;
+  }
+  .footer-index img {
+    width: 1.875rem;
+    height: 1.25rem;
+  }
+}
+/*Responsive -Por que Elegirme -768px */
+@media (max-width: 768px) {
+  .elegirme {
+    flex-direction: column;
+    display: flex;
+  }
+  .pagina2 h1:hover {
+    font-size: 1.875rem;
+    transform: scale(0.9);
+  }
+  .Generales h2:hover {
+    transform: scale(0.9);
+    font-size: 1.5625rem;
+  }
+  .sanacion h3:hover {
+    transform: scale(0.9);
+  }
+  .sanacion p:hover {
+    transform: scale(0.9);
+  }
+  .sanacion h4:hover {
+    transform: scale(0.9);
+    font-weight: bold;
+  }
+  .footer-index img {
+    width: 1.875rem;
+    height: 1.875rem;
+  }
+  .contac {
+    text-align: left;
+    margin-left: 1.5625rem;
+  }
+}
+/*Responsive -Cursos -768px */
+@media (max-width: 768px) {
+  .cursos .pagina3 h1 {
+    font-size: 1.5625rem;
+    font-weight: bold;
+  }
+  .cursos .pagina3 h2 {
+    font-size: 1.25rem;
+  }
+}
+/*Responsive -sesiones -720px */
+@media (max-width: 768px) {
+  .precios p {
+    text-decoration: line-through;
+  }
+}
+/*responsive 425px-Cursos*/
+@media (max-width: 425px) {
+  .cursos .pagina3 h1 {
+    font-size: 1.375rem;
+    font-weight: bold;
+  }
+  .cursos .pagina3 h2 {
+    font-size: 1.25rem;
+  }
+  img {
+    width: 15.625rem;
+    height: 15.625rem;
+  }
+  .grid1 p {
+    font-size: 1.0625rem;
+  }
+}
+/*responsive 425px-sesiones*/
+@media (max-width: 425px) {
+  .precios p {
+    text-decoration: line-through;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

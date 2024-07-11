@@ -1,0 +1,92 @@
+/*responsive-768px*/
+@media (max-width:768px){
+    .header-index img{
+    width: 15.625rem;
+    height: 15.625rem;}
+    
+    .Navbar{
+    display: flex;
+    flex-direction: column;}
+    
+    .Navbar a {font-size: 1.125rem;
+    font-weight: bold;}
+    
+    .main-index p{font-weight: bold;
+    font-size: .9375rem;}
+    
+    .holistica h2 {
+    font-family: "Noto serif";
+    text-align: center;
+    font-size:2.1875rem;
+    font-weight: bold;
+    }
+    .holistica ul li {
+    font-size: 1.125rem;
+    font-family: "handlee";
+    font-weight: bold;
+    }
+    .info2{font-size: 1.5625rem;
+    font-weight: bold;}
+
+    .button {padding: .625rem;}
+
+    .footer-index {display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    padding:0rem;
+    margin: 0rem;
+    flex-wrap: wrap
+    }
+    
+    .footer-index h2 {font-size: .9375rem;}
+
+    .footer-index p {font-size: .9375rem;
+        font-weight: bold;
+        }
+
+    .footer-index ul li {font-size: .9375rem;
+        font-weight: bold;
+    padding:.625rem ;}    
+
+    .footer-index img {width: 1.875rem;
+        height:1.25rem;}
+
+}
+
+/*Responsive -Por que Elegirme -768px */ 
+@media (max-width:768px){
+.elegirme{flex-direction: column;
+    display: flex;
+    }
+.pagina2 h1:hover {font-size:1.875rem ;
+transform: scale(0.9);}
+
+.Generales h2:hover {transform: scale(0.9);
+font-size:1.5625rem ;}
+
+.sanacion h3:hover {transform: scale(0.9);}
+.sanacion p:hover {transform: scale(0.9);}
+.sanacion h4:hover {transform: scale(0.9);
+font-weight: bold;}
+
+.footer-index img {width: 1.875rem;
+height: 1.875rem;}
+
+.contac {text-align: left;
+margin-left: 1.5625rem;}
+}
+
+
+/*Responsive -Cursos -768px */
+@media (max-width:768px){
+.cursos .pagina3 h1{font-size: 1.5625rem;
+font-weight: bold;}
+.cursos .pagina3 h2{font-size:1.25rem ;}}
+
+/*Responsive -sesiones -720px */
+@media (max-width:768px){
+    .precios p {
+        text-decoration:line-through;
+    }
+}
