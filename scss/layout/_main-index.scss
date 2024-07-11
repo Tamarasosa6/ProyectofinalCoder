@@ -76,9 +76,9 @@ div {
 
 .button a{
     --glow-color:#6C464F;
-    --glow-spread-color: map-get($Colores, color5 );
+    --glow-spread-color: green;
     --enhanced-glow-color: #9192FF;
-    --btn-color:map-get($Colores, color2);
+    --btn-color: #7CFAB0;
     border: .25em solid var(--glow-color);
     padding: 1rem 3rem;
     color: var(--glow-color);
